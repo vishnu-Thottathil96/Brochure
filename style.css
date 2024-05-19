@@ -62,7 +62,7 @@ embed {
 .btn:nth-child(2):hover {
   background-color: #1da851;
 } */
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   margin: 0;
@@ -142,4 +142,4 @@ h1 {
   .btn {
     padding: 8px 15px;
   }
-}
+} */

@@ -24,20 +24,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brochure Display</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Your Brochure & WhatsApp Community</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+    }
+    #brochure-container {
+      width: 100%;
+      height: 600px;
+    }
+    @media only screen and (max-width: 600px) {
+      #brochure-container {
+        height: 400px;
+      }
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .download-btn {
+      background-color: #3498db;
+      color: white;
+    }
+    .join-btn {
+      background-color: #2ecc71;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Our Brochure</h1>
-    <div class="pdf-container">
-      <iframe src="brochure.pdf" type="application/pdf"></iframe>
+    <h1>Your Awesome Brochure</h1>
+    <p>View it here or download it for later!</p>
+    <div id="brochure-container">
+      <object data="path/to/your/brochure.pdf" type="application/pdf" width="100%" height="100%">
+        No PDF support in this browser, please download the file.
+      </object>
     </div>
-    <div class="buttons">
-      <a href="brochure.pdf" download class="btn">Download Brochure</a>
-      <a href="https://chat.whatsapp.com/YourCommunityLink" class="btn">Join Our WhatsApp Community</a>
-    </div>
+    <a href="path/to/your/brochure.pdf" download="your_brochure.pdf">
+      <button class="download-btn">Download Brochure</button>
+    </a>
+    <a href="https://chat.whatsapp.com/your_whatsapp_group_link"> 
+      <button class="join-btn">Join Our WhatsApp Community</button>
+    </a>
   </div>
 </body>
 </html>
+
 
